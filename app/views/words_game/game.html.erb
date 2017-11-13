@@ -1,0 +1,17 @@
+<h1> <em>Welcome to longest word</em> </h1>
+
+
+<p> <%= @grid.join("  |  ") %> </p>
+
+<!-- make a grid/list of letters   -->
+
+
+<!-- make a form to input a guess -->
+<form action="/score">
+  <label for="question">Longest Word?</label>
+  <input type="text" id="score" name="query" placeholder="think...">
+  <input type="hidden" id="score" name="start_time" value="<% @start_time %>">
+  <input type="submit" value="Get score">
+</form>
+
+
